@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="login.css"> <!-- Link to CSS file -->
+</head>
+<body>
+  <h2>Welcome Back</h2>
+<div class="container">
+  <div class="form-box">
+      <div class="form-box">
+    <input type="email" id="email" placeholder="Email" required>
+  </div>
+  <div class="form-box">
+    <input type="password" id="password" placeholder="Password" required>
+  </div>
+  <a style="margin-left: 40px;" href="terms.html" target="_blank">Forgot Password</a>
+  <br>
+  <br>
+  <button type="submit">Sign In</button>
+</div>
+
+<hr>
+
+<div class="signinlogo">
+  <img src="image/google.png" alt="Google" onclick="registerToGoogle()">
+  <img src="image/facebook.png" alt="facebook" onclick="registerToFacebook()">
+</div>
+
+<div class="signin">
+  <label for="terms">Don't Have An Account?<a href="register.html" target="_blank">Register</a>:</label>
+  <br>
+</div>
+
+<script>
+  function registerToGoogle(){
+    window.location.href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=ARZ0qKK6pKksFk10bTDJ_TbwRkX4Rf0TtuuJnutEQIzz2xCoEaYBsHkT4T260FmKkgXl4qugLVIGVw&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S67311650%3A1713432844811798&theme=mn&ddm=0";
+  }
+  function registerToFacebook(){
+    window.location.href="https://www.facebook.com/"
+  }
+</script>
+</body>
+</html>

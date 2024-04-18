@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="workout.css" />
+    <title>Workout Tracker</title>
+  </head>
+  <body>
+    <h1>Welcome Tracker</h1>
+
+    <div class="container">
+      <div class="cal">
+        <h4>Good Job</h4>
+        <h4>Less then 360cal</h4>
+      </div>
+      <div class="img">
+        <img id="img1" src="image/Chart Full.png" alt="chart">
+      </div>
+      <div class="img">
+        <img src="image/Frame.png" alt="Frame">
+      </div>
+      <div class="upcoming">
+        <h5>Upcoming-Workout</h5>
+        <h6>See More</h6>
+      </div>
+      <div class="body">
+        <div class="full">
+            <img src="image/Ellipse 53.png" alt="">
+            <h5>Full Body Workout</h5>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+       </div>
+      </div>
+      <div class="body">
+        <div class="full">
+            <img src="image/Ellipse 54.png" alt="">
+            <h5>Upper Body Workout</h5>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+       </div>
+      </div>
+      <div class="train">
+        <h3>What Do You Want To Train</h3>
+      </div>
+       
+      <div class="arm">
+          <h5>Full Body Workout</h5>
+            <img src="image/Ellipse 55.png" alt="">
+      </div>
+      <div class="footer">
+        <div class="icon">
+        <img src="image/Vector (2).png" alt="" >
+        <img src="image/Group (1).png" alt="" onclick="workoutTOCalander()">
+        <img src="image/Vector (1).png" alt="">
+        <img src="image/google.png" alt="">
+      </div>
+    </div>
+    </div>
+    <script>
+      document.getElementById("myImage").addEventListener("click", function() {
+    window.location.hash = "content";
+    showContent();
+});
+
+// Function to display content
+function showContent() {
+    var contentDiv = document.getElementById("content");
+    contentDiv.innerHTML = "This is the content you want to display.";
+}
+
+// Check if the page has a fragment identifier on load
+window.onload = function() {
+    if (window.location.hash === "#content") {
+        showContent();
+    }
+};
+
+      }
+    </script>
+  </body>
+</html>

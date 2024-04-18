@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="register.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+  <h2>Create An Account</h2>
+<div class="container">
+  <div class="form-box">
+    <input type="text" id="first-name" placeholder="First Name" required>
+  </div>
+  <div class="form-box">
+    <input type="text" id="last-name" placeholder="Last Name" required>
+  </div>
+  <div class="form-box">
+    <input type="email" id="email" placeholder="Email" required>
+  </div>
+  <div class="form-box">
+    <input type="password" id="password" placeholder="Password" required>
+  </div>
+  <input type="checkbox" id="terms" name="terms" style="margin-left: 20px;" required>
+  <label for="terms">By proceeding,I agree to all <a href="terms.html" target="_blank">T&C Privacy Policy</a>:</label>
+  <br>
+  <br>
+  <button type="submit">Create An Account</button>
+</div>
+
+<hr>
+
+<div class="signinlogo">
+  <img src="image/google.png" alt="Google" onclick="registerToGoogle()">
+  <img src="image/facebook.png" alt="facebook" onclick="registerToFacebook()">
+</div>
+
+<div class="signin">
+  <label for="terms">Already Have An Account?<a href="login.html" target="_blank">Login</a>:</label>
+  <br>
+</div>
+
+<script>
+  function registerToGoogle(){
+    window.location.href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=ARZ0qKK6pKksFk10bTDJ_TbwRkX4Rf0TtuuJnutEQIzz2xCoEaYBsHkT4T260FmKkgXl4qugLVIGVw&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S67311650%3A1713432844811798&theme=mn&ddm=0";
+  }
+  function registerToFacebook(){
+    window.location.href="https://www.facebook.com/"
+  }
+</script>
+</body>
+</html>

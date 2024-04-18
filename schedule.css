@@ -1,0 +1,28 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 25px;
+    padding: 0%;
+  }
+  h1 {
+    text-align: center;
+  }
+  h6 {
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+  }
+  .date{
+    text-align: center;
+  }
+  .time{
+    text-align: center;
+    margin-right: 250px;
+    color: #2C2B2B;
+  }
+  hr{
+    width: 375px;
+    margin-right: 240px;
+    margin-top: -20px;
+  }
